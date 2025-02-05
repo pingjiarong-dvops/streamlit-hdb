@@ -31,7 +31,7 @@ def user_input_features():
     flat_model = st.sidebar.selectbox('Flat Model', ['2-room', '3Gen', 'Adjoined flat', 'Apartment', 'DBSS', 'Improved', 'Improved-Maisonette', 'Maisonette', 'Model A', 'Model A-Maisonette', 'Model A2', 'Multi Generation', 'New Generation', 'Premium Apartment', 'Premium Apartment Loft', 'Premium Maisonette', 'Simplified', 'Standard', 'Terrace', 'Type S1', 'Type S2'])
     
     floor_area_sqm = st.sidebar.slider('Floor Area (sqm)', 30, 200, 80)
-    remaining_lease_year = st.sidebar.slider('Remaining Lease (years)', 30, 99, 60)
+    remaining_lease_year = st.sidebar.slider('Remaining Lease (years)', 30, 60, 99)
     
     # Only the relevant user input values
     data = {
